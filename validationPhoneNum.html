@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validaion Of Phone Number : </title>
+</head>
+</script>
+<body>
+	<div>
+	<form>
+		<fieldset>
+			<legend>PHONE NUMBER :</legend>
+			<br>
+			<label>Phone No : </label>
+			<input type="text" name="Phone" required pattern="[6-9]{1}[0-9]{9}" maxlength="10" id="num">
+			<br><br>
+			<input type="Submit" name="">
+		</fieldset>
+	</form>
+</div>
+
+<script type="text/javascript">
+	let dt=(document.getElementById("num").value);
+	console.log(dt);
+</script>
+</body>
+</html>

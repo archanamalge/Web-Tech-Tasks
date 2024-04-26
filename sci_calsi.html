@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALSI</title>
+	<style type="text/css">
+		.container{
+			height: 90vh;
+			width: 100%;
+			background-repeat: no repeat;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.parent-div{
+			height: 580px;
+			width: 375px;
+			background-color: grey;
+			box-shadow: 0px 0px 50px;
+			border-radius: 30px;
+			padding: 30px;
+			background-image: url("https://e1.pxfuel.com/desktop-wallpaper/334/144/desktop-wallpaper-blackdark-grey-gradient-iphone-66-plus-and-backgrounds-750x1334-for-your-mobile-tablet-dark-gray-iphone.jpg" );
+			background-repeat: no-repeat;
+
+		}
+		.output{
+			height: 75px;
+			width: 90%;
+			background-color: white;
+			font-size: 20px;
+			text-align: right;
+			padding: 0px 20px;
+		}
+		input{
+			height: 25px;
+			width: 50px;
+			margin: 5px;
+			border:none;
+			color:black;
+			font-size: 15px;
+			border-radius: 5px;
+			font-family: Arial Black;
+		}
+		input:hover{
+			cursor: pointer;
+		}
+		input[name="operator"],.blu{
+			background-color: grey;
+		}
+		.eql{
+			background-color: black;
+		}
+		.casio{
+			padding-top: 0px;
+  			margin-left: 10px;
+  			float:left;
+  			font-style: bold;
+  			font-weight: 700;
+  			font-family: sans-serif;
+  			font-size:1.4em;
+  			color: #acb4c1;
+		}
+		.fx{
+  			font-size:1em;
+   			margin-top:20px;
+  			margin-right: 25px;
+ 			color: #acb4c1;
+  			float:left;
+  			font-style:italic;
+ 		}
+ 		.tag{
+  			margin-top:60px;
+  			color:#ff7283;
+  			text-align: center;
+  			font-family: sans-serif;
+  			font-style: bold;
+  			font-size:1.3em;
+		}
+	</style>
+
+        
+</head>
+<body>
+
+	<div class="container" >
+		<div class="parent-div" align="center">
+			<form>
+				<div class="data">
+					 <div>
+         				<span class="casio" >CASIO</span>
+          				<span class="fx">&#119891;x-991MS</span>        
+      				</div>
+        		<h3 class="tag">S-V.P.A.M</h3>
+        		<form>
+					<input type="text" name="op"  class="output" disabled>
+					<br></br>
+				</div>
+
+				<div>
+					<input type="button" name="name" value="sin" class="blu" onclick="op.value=Math.sin(op.value)" >
+					<input type="button" name="name" value="cos" class="blu" onclick="op.value=Math.cos(op.value)">
+					<input type="button" name="name" value="tan" class="blu" onclick="op.value=Math.tan(op.value) " >
+					<input type="button" name="name" value="Deg" class="blu" onclick="op.value=''" >
+					<input type="button" name="name" value="Rad" class="blu" onclick="op.value=''" >
+
+				</div>
+
+				<div>
+					<input type="button" name="si" value="sin-1" class="blu" onclick="op.value+=Math.asin(op.value)" >
+					<input type="button" name="co" value="cos-1" class="blu" onclick="op.value+=Math.acos(op.value)">
+					<input type="button" name="ta" value="tan-1" class="blu" onclick="op.value+=Math.atan(op.value)">
+					<input type="button" name="py" value="π" class="blu"  onclick="op.value=3.14159265359*op.value" >
+					<input type="button" name="E" value="e" class="blu" onclick="op.value=Math.exp()" >
+
+				</div>
+
+				<div>
+					<input type="button" name="operator" value="x^y" class="blu" onclick="op.value+='^'" >
+					<input type="button" name="name" value="x^3"  class="blu"onclick="op.value+='^3' " >  <!--giving wrong ans(2^3=1)-->
+					<input type="button" name="name" value="x^2" class="blu" onclick="op.value+='^2' " >  <!--giving wrong ans(2^3=1)-->
+					<input type="button" name="name" value="e^x"  class="blu"onclick="op.value+=Math.exp(op.value) " >  <!--giving wrong ans(2^3=1)-->
+					<input type="button" name="name" value="10^x"  class="blu"onclick="op.value+=Math.exp(op.value)" >  <!--giving wrong ans(2^3=1)-->
+				</div>
+
+				<div>
+					<input type="button" name="name" value="y&#8730;x" class="blu" onclick="op.value+=Math.cbrt()" >
+					<input type="button" name="name" value="&#8731;x" class="blu" onclick="op.value+=Math.cbrt(op.value)">
+					<input type="button" name="name" value="&#8730;x" class="blu" onclick="op.value+=Math.sqrt(op.value)" >
+					<input type="button" name="name" value="log" class="blu" onclick="op.value+=Math.log(op.value)" >
+					<input type="button" name="name; "value="ln" class="blu" onclick="op.value+=Math.sqrt(op.value)" >
+				</div>
+
+				<div>
+					<input type="button" name="operator" value="(" class="blu" onclick="op.value='('" >
+					<input type="button" name="operator" value=")" class="blu" onclick="op.value=')'">
+					<input type="button" name="name" class="blu" value="1/x" onclick="op.value+='1/' " ><!----working-->
+					<input type="button" name="name" class="blu" value="n!" onclick="op.value+=fact(op.value)">
+					<input type="button" name="name" class="blu" value=" " onclick="op.value+=''">
+
+				</div>
+
+				<div>
+					<input type="button" name="ac" value="AC" class="blu" onclick="op.value=' '" >
+					<input type="button" name="c" value="C" class="blu" onclick="op.value=op.value.slice(0,-1)">
+					<input type="button" name="operator" value="/" onclick="op.value+='/' " >
+					<input type="button" name="operator" value="%" onclick="op.value+='%'" >
+					<input type="button" name="name" class="blu" value="M+" onclick="op.value+=''">
+
+				</div>
+
+				<div>
+					<input type="button" name="num" value="9" onclick="op.value+='9'" >
+					<input type="button" name="num" value="8" onclick="op.value+='8'">
+					<input type="button" name="num" value="7" onclick="op.value+='7' " >
+					<input type="button" name="operator" value="+" onclick="op.value+='+'" >
+					<input type="button" name="name" class="blu" value="M-" onclick="op.value+=''">
+				</div>				
+
+				<div>
+					<input type="button" name="num" value="6" onclick="op.value+='6'" >
+					<input type="button" name="num" value="5" onclick="op.value+='5'">
+					<input type="button" name="num" value="4" onclick="op.value+='4' " >
+					<input type="button" name="operator" value="-" onclick="op.value+='-'" >
+					<input type="button" name="name" class="blu" value="MRC" onclick="op.value+=''">
+				</div>			
+
+				<div>
+					<input type="button" name="num" value="3" onclick="op.value+='3'" >
+					<input type="button" name="num" value="2" onclick="op.value+='2'">
+					<input type="button" name="num" value="1" onclick="op.value+='1' " >
+					<input type="button" name="operator" value="*" onclick="op.value+='*'" >
+					<input type="button" name="name" class="blu" value="ANS" onclick="op.value=eval(op.value)" class="eql">
+				</div>			
+
+				<div>
+					<input type="button" name="num" value="0" onclick="op.value+='0'" >
+					<input type="button" name="num" value="." onclick="op.value+='.'">
+					<input type="button" name="num" value="," onclick="op.value+=','">
+					<input type="button" name="num" class="blu" value="=" onclick="op.value=eval(op.value)" class="eql">
+					<input type="button" name="num" value="±" class="blu" onclick="op.value+=Math.abs(op.value)">
+				</div>						
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
