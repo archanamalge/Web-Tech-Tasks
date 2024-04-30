@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selector</title>
+	<style type="text/css">
+		/*Universal selector*/
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		/*type selector*/
+		div{
+			font-family: cursive;
+		}
+		/*class Selector*/
+		.mypara1{
+			font-weight: bolder;
+		}
+		/*Id selector*/
+		#mypara{
+			color: darkcyan;
+		}
+		/*grouping Selector*/
+		.mypara1,#mypara,.mypara3{
+			text-decoration: underline 2px solid limegreen;
+		}
+		/*desecedant Selector*/
+		.mydiv2 div ul li{
+			color: royalblue;
+		}
+		/* child Selector*/
+		.mydiv1>ul>li{
+			color: royalblue;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="div1">
+		<p class="mypara1">
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<br>
+
+	</div>
+
+	<div >
+		<p id="mypara">
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<br>
+	</div>
+
+	<div class="div1">
+		<p class="mypara3">
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<br>
+
+	<div class="mydiv2">
+		<h1>UNORDER LIST</h1>
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>
+	</div>
+	<br>
+
+	<form>
+		<input type="text" name=""><br><br>
+		<input type="password" name=""><br><br>
+		<input type="email" name="emailid">
+	</form>
+</body>
+</html>
