@@ -1,0 +1,64 @@
+.topnav1{
+	font-color: white;
+}
+.main-container{
+	background-image: url("https://i.pinimg.com/736x/39/95/d4/3995d4dcfb99a5b967830819052a4b8a.jpg");
+	background-image: linear gradient(to top,blue,royalblue)
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%
+}
+.nav{
+	font-size: 25px;
+}
+.tit{
+	color: white	;
+	font-weight: bolder;
+	margin-left: 250px;
+}
+.btn{
+	color: black;
+	border: 2px solid darkblue;
+}
+.lgnbtn{
+	border: none;
+	background-color: royalblue;
+	height: 70px;
+	border-radius: 20px 20px 20px 0px;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: Arial Black;
+	color: white;
+	top: 30px;
+	margin-left: 250px;
+}
+.lgnbtn1{
+	border: none;
+	background-color: purple;
+	height: 70px;
+	border-radius: 20px 20px 20px 0px;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: Arial Black;
+	color: white;
+	margin-left: 30px;
+}
+.nav-link{
+	color: white;
+}
+.imgb{
+	margin-top: 0px;
+}
+.lgnbtn2{
+	border: none;
+	background-color: purple;
+	height: 40px;
+	margin-top: 0px;
+	border-radius: 20px 20px 20px 0px;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: Arial Black;
+	color: white;
+	margin-left: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text Editor</title>
+	<style type="text/css">
+	    .heading4{
+	    	font-size: 50px;
+	    	font-weight: bolder;
+	    	color: red;
+
+	    }
+	    label{
+	    	font-size: 25px;
+	    	font-weight: bolder;
+	    	color: black;
+	    	margin-left: 70px;
+
+	    }
+	    .from-con{
+	    	margin-top:50px;
+	    }
+	    .onb{
+	    	border: none;
+	    	height: 50px;
+	    	width: 150px;
+	    	background-color: red;
+	    	color: white;
+	    	border-radius: 13px;
+	    	margin-left: 290px;
+	    	/*font-weight: bolder;*/
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="texteditor" align="center">
+		<h1 class="heading4">TEMPERATURE CONVERTER</h1>
+		<h2>Result in celsius</h2>
+	</div>
+		<div class="form-con" style="margin-left: 400px;">
+			<form class="textform" >
+				<br>
+				<label>Degree</label>
+				<input type="number" id="deg" name="Degree" style="border: 3px solid black;">
+				<label>Celsius</label>
+				<input type="number" name="Degree" style="border: 3px solid black;">
+				<br><br>
+				<br><br>
+				<button type="button" class="onb" onclick="convC()">Convert</button>
+				<br>
+			</form>
+		</div>
+		
+	<script type="text/javascript">
+		function convC(){
+			let inval = document.getElementById("deg");
+			console.log(inval);
+		}
+
+	</script>
+
+</body>
+</html>
